@@ -23,7 +23,7 @@ local Supported_Games = {
  ["6839171747"] = "DoorsLoader",
  ["6516141723"] = "DoorsLoader",
  ["42829857342"] = "Combat%20Warriors",
- ["155615604"] = "PrisonLife" 	
+ ["155615604"] = "PrisonLife.lua" 	
 }
 
 local success, err = pcall(function()
