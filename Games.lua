@@ -22,7 +22,7 @@ function CreateNotification(Name,Content,Time,Purpose)
 local Supported_Games = {
  ["6839171747"] = "DoorsLoader",
  ["6516141723"] = "DoorsLoader",
- ["4282985734"] = "Combat%20Warriors",
+ ["4282985734"] = "Combat%20Warriors.lua",
  ["155615604"] = "PrisonLife.lua" 	
 }
 
