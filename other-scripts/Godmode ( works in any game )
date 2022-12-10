@@ -6,7 +6,7 @@ local Humanoid = LocalPlayer.Character:FindFirstChildOfClass("Humanoid")
 Humanoid.Parent = nil; Humanoid.Parent = LocalPlayer.Character
 
 LocalPlayer.CharacterAdded:Connect(function(char)
+loadstring(game:HttpGet('https://raw.githubusercontent.com/RTrade/Voidz/main/other-scripts/Client_AntiCheatBypass'))(true)
 local Humanoid = char:FindFirstChildOfClass("Humanoid")
 Humanoid.Parent = nil; Humanoid.Parent = LocalPlayer.Character
-loadstring(game:HttpGet('https://raw.githubusercontent.com/RTrade/Voidz/main/other-scripts/Client_AntiCheatBypass'))(true)
 end)
