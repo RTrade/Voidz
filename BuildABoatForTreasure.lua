@@ -206,16 +206,8 @@ MainTab:AddButton({
 		killall()
 	end
 })
-TeleportTab:AddButton({
-	Name = "Golden Chest",
-	Callback = function()
-	for _,v in pairs(game:GetService("Workspace").Chests:GetDescendants()) do
-		if v.Name == "Chest" then
-			 firetouchinterest(game:GetService("Players").LocalPlayer.Character.HumanoidRootPart,v.PPart.TouchTrigger,0)
-		end
-	end	
-	end
-})
+
+
 TeleportTab:AddButton({
 	Name = "Random Player",
 	Callback = function()
