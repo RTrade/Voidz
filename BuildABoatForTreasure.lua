@@ -209,10 +209,11 @@ MainTab:AddButton({
 TeleportTab:AddButton({
 	Name = "Golden Chest",
 	Callback = function()
-		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = workspace.GoldenChest.Collider.CFrame
-				game.Players.LocalPlayer.Character.Humanoid.Jump = true
-				game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = workspace.GoldenChest.Collider.CFrame
-		
+	for _,v in pairs(game:GetService("Workspace").Chests:GetDescendants()) do
+		if v.Name == "Chest" then
+			 firetouchinterest(game:GetService("Players").LocalPlayer.Character.HumanoidRootPart,v.PPart.TouchTrigger,0)
+		end
+	end	
 	end
 })
 TeleportTab:AddButton({
