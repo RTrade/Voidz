@@ -97,10 +97,18 @@ local TeleportTab = Window:MakeTab({
 })
 
 local CharacterTab = Window:MakeTab({
-	Name = "World",
+	Name = "Character",
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
 })
+local CreditsTab = Window:MakeTab({
+	Name = "Credits",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+CreditsTab:AddParagraph("Script Creator","Trade#6676.")
+CreditsTab:AddParagraph("Script User",""..game:GetService("Players").LocalPlayer.DisplayName..".")
 
 
 
