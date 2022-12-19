@@ -1,3 +1,4 @@
+	
 local Orion = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
 local PlaceId = game.PlaceId
 local PlaceName = game:GetService("MarketplaceService"):GetProductInfo(game.PlaceId).Name
@@ -18,7 +19,9 @@ function CreateNotification(Name,Content,Time,Purpose)
     })
     end
   end
-
+if not getgenv then
+	CreateNotification("Voidz","Your Executor Does not support some commands we need!",5,"Notify")
+end
 local Supported_Games = {
  ["6839171747"] = "DoorsLoader",
  ["6516141723"] = "DoorsLoader",
