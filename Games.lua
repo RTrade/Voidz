@@ -27,7 +27,10 @@ local Supported_Games = {
  ["8888615802"] = "RainbowFriends.lua",
  ["7991339063"] = "RainbowFriends.lua",
  ["2653064683"] = "WordBomb.lua",
- ["537413528"] = "BuildABoatForTreasure.lua"
+ ["537413528"] = "BuildABoatForTreasure.lua",
+ ["621129760"] = "KAT.lua",
+ ["286090429"] "Arsenal.lua",
+ ["142823291"] = "MurderMystery2.lua"
 }
 
 local success, err = pcall(function()
