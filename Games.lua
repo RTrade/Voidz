@@ -46,7 +46,13 @@ local Supported_Games = {
  ["286090429"] = "Arsenal.lua",
  ["379614936"] = "Assassin.lua",
  ["4003872968"] = "Giant%20Survival.lua",
- ["1240123653"] = "Zombie%20Attack.lua"
+ ["1240123653"] = "Zombie%20Attack.lua",  
+ ["9872472334"] = "Evade.lua",
+ ["10662542523"] = "Evade.lua",
+ ["10324347967"] = "Evade.lua",
+ ["10324346056"] = "Evade.lua",
+ ["110539706691"] = "Evade.lua",
+ ["10808838353"] = "Evade.lua"
 }
 
 local success, err = pcall(function()
