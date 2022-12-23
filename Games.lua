@@ -59,7 +59,7 @@ local success, err = pcall(function()
     for gameid,gamefile in pairs(Supported_Games) do
 		if game.PlaceId == tonumber(gameid) then
         Loadstringed = true
-        loadstring(game:HttpGet('https://raw.githubusercontent.com/RTrade/Voidz/main/'..tostring(gamefile)))()
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/RTrade/Voidz/main/'..gamefile))()
         end
     end
     end)
