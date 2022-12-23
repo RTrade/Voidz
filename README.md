@@ -1,2 +1,2 @@
 # Voidz
-# An Mod for roblox that works for 11 Games.
+Source code for Voidz for more infomation go to https://rtrade.github.io
