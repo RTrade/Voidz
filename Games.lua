@@ -52,7 +52,8 @@ local Supported_Games = {
  ["10324347967"] = "Evade.lua",
  ["10324346056"] = "Evade.lua",
  ["110539706691"] = "Evade.lua",
- ["10808838353"] = "Evade.lua"
+ ["10808838353"] = "Evade.lua",
+ ["3101667897"] = "LegendsOfSpeed.lua"
 }
 
 local success, err = pcall(function()
