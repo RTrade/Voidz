@@ -100,9 +100,10 @@ MainTab:AddButton(
     {
         Name = "Teleport to Random Player",
         Callback = function()
+            local Players = game:GetService("Players")
             local randomPlayer = Players:GetPlayers()[math.random(1, #Players:GetPlayers())]
 
-LocalPlayer.Character.HumanoidRootPart.CFrame =
+Players.LocalPlayer.Character.HumanoidRootPart.CFrame =
     CFrame.new(
     Vector3.new(
         randomPlayer.Character.Head.Position.X,
