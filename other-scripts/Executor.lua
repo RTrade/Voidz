@@ -25,7 +25,7 @@ return "Script-ware"
   elseif getfenv().LuaQ then
   return "Lua Q"
   end
-  if getgenv() then
+  if getgenv then
     return "Unknown"
     else
     return "a Shit Executor"
