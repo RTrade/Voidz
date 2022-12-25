@@ -1,4 +1,0 @@
--- detects if your executor is synapse
-if syn then
-print("synapse detected
-end
