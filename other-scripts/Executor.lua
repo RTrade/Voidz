@@ -10,6 +10,7 @@ Arceus X
 Lua Q
 
 ( Note this works if you execute this code on an execution software )
+
 ]]
 function GetExecutor()
 if syn then
