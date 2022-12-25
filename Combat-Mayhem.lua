@@ -4,6 +4,7 @@ local GameName = game:GetService("MarketplaceService"):GetProductInfo(game.Place
 local AntiBypass = false
 local Workspace = game:GetService("Workspace")
 local OrionLib = loadstring(game:HttpGet(("https://raw.githubusercontent.com/shlexware/Orion/main/source")))()
+local AntiDR = false
 local Window =
     OrionLib:MakeWindow(
     {
@@ -95,6 +96,23 @@ MainTab:AddButton(
     }
 )
 
+MainTab:AddButton(
+    {
+        Name = "Teleport to Random Player",
+        Callback = function()
+            local randomPlayer = Players:GetPlayers()[math.random(1, #Players:GetPlayers())]
+
+LocalPlayer.Character.HumanoidRootPart.CFrame =
+    CFrame.new(
+    Vector3.new(
+        randomPlayer.Character.Head.Position.X,
+        randomPlayer.Character.Head.Position.Y,
+        randomPlayer.Character.Head.Position.Z
+    )
+)
+        end
+    }
+)
 function ToggleDrownOn()
     for i, v in pairs(game:GetService("ReplicatedStorage"):GetDescendants()) do
         if v.Name == NewDrownName then
@@ -115,7 +133,10 @@ MainTab:AddToggle(
         Name = "Anti Drown",
         Default = false,
         Flag = "AntiDrown",
-        Save = true
+        Save = true,
+        Callback = function(s)
+            AntiDR = s
+            end
     }
 )
 MainTab:AddToggle(
@@ -180,7 +201,13 @@ if setclipboard then
     )
 end
 
-local RainbowColor = .0
+game:GetService("RunService").RenderStepped:Connect(function()
+        if AntiDR then
+            ToggleDrownOff()
+        else
+            ToggleDrownOn()
+        end
+    end)
 RunService.RenderStepped:Connect(
     function()
         local tr = 1
@@ -206,10 +233,6 @@ RunService.RenderStepped:Connect(
             end
         end
 
-        if OrionLib["AntiDrown"].Value == true then
-            ToggleDrownOff()
-        else
-            ToggleDrownOn()
-        end
+    
     end
 )
