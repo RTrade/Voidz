@@ -84,6 +84,6 @@ if not success then
 end
 
 if not Loadstringed then
- CreateNotification("Voidz","Game is not supported",15,"Error")
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/RTrade/Voidz/main/Universal.lua"))()
  end
 
