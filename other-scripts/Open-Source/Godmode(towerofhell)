@@ -2,9 +2,6 @@
 local Players = game:GetService("Players")
 local LocalPlayer = Players.LocalPlayer
 function Godmode(char)
-if getgenv() then
-getgenv().skid = true -- omg skid!? 
-end
 if char:FindFirstChild("KillScript") then
 char:FindFirstChild("KillScript"):Remove()
 end
