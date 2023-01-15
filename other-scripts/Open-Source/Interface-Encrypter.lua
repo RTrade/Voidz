@@ -1,3 +1,5 @@
+local HttpService = game:GetService("HttpService")
+local CoreGui = game:GetService("CoreGui")
 function Encrypt(data)
   if data.ClassName:match("Event") then return end
   data.Name = string.lower(HttpService:GenerateGUID(false):gsub("-",""))
