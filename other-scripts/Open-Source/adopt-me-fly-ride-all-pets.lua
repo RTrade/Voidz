@@ -1,4 +1,4 @@
--- omg i made an game for 6 year olds
+
 
 -- settings
 local Rideable = true -- Set to true to make all pets rideable or set to false to not make all pets rideable
