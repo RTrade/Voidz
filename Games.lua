@@ -64,8 +64,17 @@ local Supported_Games = {
 local success, err = pcall(function()
     for gameid,gamefile in pairs(Supported_Games) do
 		if game.PlaceId == tonumber(gameid) then
-        Loadstringed = true
+       Loadstringed = true
+       local suc,err = pcall(function()
+						        Loadstringed = true
         loadstring(game:HttpGet('https://raw.githubusercontent.com/RTrade/Voidz/main/'..gamefile))()
+			end)
+	if not suc then
+		pcall(function()
+				  loadstring(game:HttpGet('https://raw.githubusercontent.com/RTrade/Voidz/main/Main/'..gamefile))()
+				end)
+		end
+ 
         end
     end
     end)
