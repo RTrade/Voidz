@@ -1,5 +1,6 @@
+-- bypasses client anti cheats aka bad anti cheats lol
 Infomation = [[
-Secure Protection - Encrypts your scripts that modify the character for example Fly, Speed, Noclip, etc. This can break scripts such as ESP.
+Secure Protection - Encrypts the names of scripts that modify the character for example Fly, GetHUI, etc. This can break scripts such as ESP.
 Script Tampering - Tampers with scripts to attempt to protect them constantly. This could break entire scripts that tamper themselves.
 Print Blacklist - When an blacklisted Item is executed such as Dex Explorer It will not TAMPER OR SECURE them because they are alreday secure.
 Delete Anti-Cheat - Proceeds to search for client Anti-Cheat files replace with an decoy version then disbale and delete.
