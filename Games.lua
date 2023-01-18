@@ -58,6 +58,7 @@ local Supported_Games = {
  ["11656036986"] = "make%20roblox%20games%20to%20become%20rich%20and%20famous.lua",
  ["185655149"] = "Bloxburg.lua",
  ["6229116934"] = "HOOPZ.lua",
+ ["7221355866"] = "HOOPZ.lua",
  ["164051105"] = "Super%20Bomb%20Survival.lua"
 }
 
@@ -75,6 +76,7 @@ local success, err = pcall(function()
 			end)
 	if not suc then
 		pcall(function()
+							Loadstringed = true
 				  loadstring(game:HttpGet('https://raw.githubusercontent.com/RTrade/Voidz/main/Main/'..gamefile))()
 				end)
 		end
