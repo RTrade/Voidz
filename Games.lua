@@ -61,9 +61,13 @@ local Supported_Games = {
  ["164051105"] = "Super%20Bomb%20Survival.lua"
 }
 
+if string.lower(PlaceName):match("bedwars")then 
+    Loadstringed = true
+     loadstring(game:HttpGet('https://raw.githubusercontent.com/RTrade/Voidz/main/Main/Bedwars.lua'))()
+    end
 local success, err = pcall(function()
     for gameid,gamefile in pairs(Supported_Games) do
-		if game.PlaceId == tonumber(gameid) then
+		if game.PlaceId == tonumber(gameid)and not Loadstringed then
        Loadstringed = true
        local suc,err = pcall(function()
 						        Loadstringed = true
