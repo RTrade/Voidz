@@ -1,2 +1,4 @@
 # Voidz
-Source code for Voidz for more infomation go to https://rtrade.github.io
+** FULLY UNDETECTED **
+Voidz is an exploit fully coded in RLua and is made for roblox.
+Get Voidz today at https://rtrade.github.io
