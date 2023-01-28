@@ -3,7 +3,7 @@ local Players = game.GetService(game, "Players")
 local LocalPlayer = Players.LocalPlayer
 local Mouse = LocalPlayer:GetMouse()
 function ClosestPlayer()
-    local MaxDist, Closest = math.huge
+    local MaxDist, Closest = 30
     for I,V in pairs(Players.GetPlayers(Players)) do
         if V == LocalPlayer then continue end
         if V.Team == LocalPlayer then continue end
