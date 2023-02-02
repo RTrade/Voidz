@@ -1,0 +1,9 @@
+
+return {
+  version = "1.0.0",
+  bypassanticheat = true,
+  lite = false,
+  encodetxt = true,
+  text = "font color="rgb(38, 55, 189)">voidz </font>premium"
+  }
+  
