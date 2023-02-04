@@ -1,8 +1,3 @@
-# Voidz
-
-The source code for Voidz a cheat and exploit made for robox
-
-Feel free to fork, edit or take code from here at anytime.
 
 
 [**PREVIEW**](#preview)
@@ -17,12 +12,13 @@ Voidz is a cheat and exploit made for roblox. Voidz is fully undetectable and is
 # Preview
 
 ![img](other-scripts/ss/RobloxScreenShot20230204_125239167.png)
+![img](other-scripts/ss/RobloxScreenShot20230204_131925959.png)
 
-# Download
-You can download voidz here
+## Download
+**You can download voidz here
 https://rtrade.github.io
 
 <hr/>
 <div align="center">
-Feel free to report bugs in the issue tab or open pull request.
+feel free to report bugs to RTrade via issues on github.
 </div>
