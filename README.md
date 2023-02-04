@@ -1,24 +1,7 @@
-
-
-[**PREVIEW**](#preview)
-
-# Main
-Voidz is a cheat and exploit made for roblox. Voidz is fully undetectable and is constantly updated by RTrade. Here is a preview of what Voidz looks like
-
-
-
-
-
-# Preview
-
-![img](other-scripts/ss/RobloxScreenShot20230204_125239167.png)
-![img](other-scripts/ss/RobloxScreenShot20230204_131925959.png)
-
-## Download
-**You can download voidz here
-https://rtrade.github.io
-
-<hr/>
-<div align="center">
-feel free to report bugs to RTrade via issues on github.
-</div>
+# Voidz
+[·YouTube Channel](https://www.youtube.com/channel/UC9R30r3RanVhs0CkPpFb8iA)  [·Script](https://raw.githubusercontent.com/RTrade/Voidz/main/other-scripts/Loadstring.lua)  [·Website](https://rtrade.github.io)
+<br>
+<br>
+![arsenal](other-scripts/ss/RobloxScreenShot20230204_125239167.png)
+![hoopz](other-scripts/ss/RobloxScreenShot20230204_131925959.png)
+<br>
