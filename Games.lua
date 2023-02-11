@@ -62,7 +62,9 @@ local Supported_Games = {
  ["164051105"] = "Super%20Bomb%20Survival.lua",
  ["2753915549"] = "BloxFruits.lua",
  ["4442272183"] = "BloxFruits.lua",
- ["7449423635"] = "BloxFruits.lua"
+ ["7449423635"] = "BloxFruits.lua",
+ ["9772878203"] = "RaiseAFloppa2.lua",
+ ["9921522947"] = "RaiseAFloppa2.lua"	
 }
 
 if string.lower(PlaceName):match("bedwars")then 
