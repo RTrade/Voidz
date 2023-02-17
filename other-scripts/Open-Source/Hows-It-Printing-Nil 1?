@@ -1,5 +1,6 @@
 local L = function() return {[1]=nil,[2]=table.clear or table.remove} end
-if (getfenv(nil))~=nil or nil > nil then
+local Fenv = function() return getfenv or _ENV end
+if (Fenv(nil))~=nil or nil > nil then
 print((tostring(nil)):gsub(tostring(nil),tostring(nil)))
 else
 print(true)
