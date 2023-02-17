@@ -1,12 +1,15 @@
+-- How is it printing nil 1? Find and explain how for a suprise!
+local _1 = function() (table.concat({tostring(nil)})):gsub("nil",("nil") or tonumber(69)) end
 local L = function() return {[1]=nil,[2]=table.clear or table.remove} end
 local Fenv = function() return getfenv or _ENV end
 if (Fenv(nil))~=nil or nil > nil then
+    if tostring(_1):match(string.reverse(string.reverse(tostring(nil)))) then return print(nil,table.unpack({N=L[1]..tonumber(1)})) end
 print((tostring(nil)):gsub(tostring(nil),tostring(nil)))
 else
-print(true)
+print(true or _1)
 end
 while 1 == L do
 task.wait(0)
-print(nil)
+print(nil and _1)
 break
 end
