@@ -3405,18 +3405,18 @@ function library:CreateWindow(name, size, hidebutton)
                 makefolder(configSystem.configFolder)
             end
 
-            configSystem.sector = tab:CreateSector("Configs", side or "left")
+            configSystem.sector = tab:CreateSector("configs", side or "left")
 
-            local ConfigName = configSystem.sector:AddTextbox("Config Name", "", ConfigName, function() end, "")
+            local ConfigName = configSystem.sector:AddTextbox("config Name", "", ConfigName, function() end, "")
             local default = tostring(listfiles(configSystem.configFolder)[1] or ""):gsub(configSystem.configFolder .. "\\", ""):gsub(".txt", "")
-            local Config = configSystem.sector:AddDropdown("Configs", {}, default, false, function() end, "")
+            local Config = configSystem.sector:AddDropdown("configs", {}, default, false, function() end, "")
             for i,v in pairs(listfiles(configSystem.configFolder)) do
                 if v:find(".txt") then
                     Config:Add(tostring(v):gsub(configSystem.configFolder .. "\\", ""):gsub(".txt", ""))
                 end
             end
 
-            configSystem.Create = configSystem.sector:AddButton("Create", function()
+            configSystem.Create = configSystem.sector:AddButton("create", function()
                 for i,v in pairs(listfiles(configSystem.configFolder)) do
                     Config:Remove(tostring(v):gsub(configSystem.configFolder .. "\\", ""):gsub(".txt", ""))
                 end
@@ -3448,7 +3448,7 @@ function library:CreateWindow(name, size, hidebutton)
                 end
             end)
 
-            configSystem.Save = configSystem.sector:AddButton("Save", function()
+            configSystem.Save = configSystem.sector:AddButton("save", function()
                 local config = {}
                 if Config:Get() and Config:Get() ~= "" then
                     for i,v in pairs(library.flags) do
@@ -3469,7 +3469,7 @@ function library:CreateWindow(name, size, hidebutton)
                 end
             end)
 
-            configSystem.Load = configSystem.sector:AddButton("Load", function()
+            configSystem.Load = configSystem.sector:AddButton("load", function()
                 local Success = pcall(readfile, configSystem.configFolder .. "/" .. Config:Get() .. ".txt")
                 if (Success) then
                     pcall(function() 
@@ -3507,7 +3507,7 @@ function library:CreateWindow(name, size, hidebutton)
                 end
             end)
 
-            configSystem.Delete = configSystem.sector:AddButton("Delete", function()
+            configSystem.Delete = configSystem.sector:AddButton("delete", function()
                 for i,v in pairs(listfiles(configSystem.configFolder)) do
                     Config:Remove(tostring(v):gsub(configSystem.configFolder .. "\\", ""):gsub(".txt", ""))
                 end
