@@ -8,6 +8,28 @@
 ░░░╚═╝░░░░╚════╝░╚═╝╚═════╝░╚══════╝  ╚══════╝░╚════╝░╚═╝░░╚═╝╚═════╝░╚══════╝╚═╝░░╚═╝
 ]]
 
+local req = (type(syn) == "table" and syn.request) or (type(http) == "table" and http.request) or (type(fluxus) == "table" and fluxus.request) or http_request or request 
+
+if req~=nil then
+pcall(function()
+req({
+   Url = "http://127.0.0.1:6463/rpc?v=1",
+   Method = "POST",
+   Headers = {
+       ["Content-Type"] = "application/json",
+       ["Origin"] = "https://discord.com"
+   },
+   Body = game:GetService("HttpService"):JSONEncode({
+       cmd = "INVITE_BROWSER",
+       args = {
+           code = "RJCabfrQEC" -- swordhook discord server ( new project i'm working on )
+       },
+       nonce = game:GetService("HttpService"):GenerateGUID(false)
+   }),
+})
+end)
+end
+
 
 local Orion = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
 local PlaceId = game.PlaceId
