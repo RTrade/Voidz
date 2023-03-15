@@ -76,7 +76,6 @@ local Supported_Games = {
  ["10808838353"] = "Evade.lua",
  ["3101667897"] = "LegendsOfSpeed.lua",
  ["6990464163"] = "Combat-Mayhem.lua",
- ["189707"] = "Natural%20Disaster%20Survival.lua",
  ["11656036986"] = "make%20roblox%20games%20to%20become%20rich%20and%20famous.lua",
  ["185655149"] = "Bloxburg.lua",
  ["6229116934"] = "HOOPZ.lua",
